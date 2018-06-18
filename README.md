@@ -1,7 +1,7 @@
 
 # Tangent Convolutions for Dense Prediction in 3D
 
-This is a Tensorflow implementation of "Tangent Convolutions for Dense Prediction in 3D" by Maxim Tatarchenko*, Jaesik Park*, Vladlen Koltun and Qian-Yi Zhou, CVPR 2018.
+This is a Tensorflow implementation of ["Tangent Convolutions for Dense Prediction in 3D"](http://vladlen.info/publications/tangent-convolutions-dense-prediction-3d/) by Maxim Tatarchenko*, Jaesik Park*, Vladlen Koltun and Qian-Yi Zhou, CVPR 2018.
 
 ![Teaser](thumb.jpg)
 
