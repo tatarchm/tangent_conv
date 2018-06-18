@@ -3,6 +3,8 @@
 
 This is a Tensorflow implementation of "Tangent Convolutions for Dense Prediction in 3D" by Maxim Tatarchenko*, Jaesik Park*, Vladlen Koltun and Qian-Yi Zhou, CVPR 2018.
 
+![Teaser](thumb.jpg)
+
 ## Setup
 
 Pre-prequisites
