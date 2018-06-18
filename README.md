@@ -22,6 +22,10 @@ Update the path to Open3D and the path to Tangent Convolutions in
 
 	tangent_convolutions/util/path_config.py
 
+## Experiments
+
+Experimental parameters are stored in .json configuration files. You can find configurations for all experiments shown in the paper in the 'experiments' folder. The exact description of individual parameters is provided [here](util/README.md).
+
 ## Initial Data Preparation
 
 We provide the 'get_data.py' script for initial data downloading, extraction and conversion. It supports three datasets: S3DIS, ScanNet and Semantic3D. Below we describe how to use this script to prepare each of those datasets. Upon completion, it produces a set of directories, each one containing data for a single scan ('scan.pcd' and 'scan.labels').
@@ -54,21 +58,18 @@ In order to precompute the parametrization for a dataset, run
 
 	$ python tc.py <experiment_config> --precompute
 
-## Experiments
-
-Experimental parameters are stored in .json configuration files. You can find configurations for all experiments shown in the paper in the 'experiments' folder. The exact description of individual parameters is provided [here](util/README.md).
 
 ## Training and testing
 
 
-Network training can be started by executing
+To start network training, run
 
 	$ python tc.py <experiment_config> --train
 
 During training, the network outputs intermediate data into these folders:
 
 - ``logs``: Training logs which can be visualized using Tensorboard.
-- ``snapshots``: Network snapshots which are saved based on the evaluation performance: if current evaluation is the best so far, the corresponding snapshot is saved.
+- ``snapshots``: Network snapshots which are saved based on the evaluation performance. If current evaluation is the best so far, the corresponding snapshot is saved.
 
 To test a trained model, run
 
@@ -90,7 +91,7 @@ To visualize predictions, run
 
 	$ python vis.py <experiment_config> <scan_name> <mode>
 
-\<mode\> can be one of ``g`` (show ground truth labels), ``p`` (show predicted labels) or ``c`` (show colors)
+\<mode\> can be one of ``g`` (show ground truth labels), ``p`` (show predicted labels) or ``c`` (show colors).
 
 By default, downsampled scans are visualized. If you want to instead visualize the original scans, add the '--raw' flag.
 
