@@ -1,5 +1,7 @@
 
-# Source code for Tangent Convolution
+# Tangent Convolutions for Dense Prediction in 3D
+
+This is a Tensorflow implementation of "Tangent Convolutions for Dense Prediction in 3D" by Maxim Tatarchenko*, Jaesik Park*, Vladlen Koltun and Qian-Yi Zhou, CVPR 2018.
 
 ## Setup
 
@@ -8,7 +10,7 @@ Pre-prequisites
 	python == 3.6
 	tensorflow >= 1.3
 	
-Compile Open3D
+Clone [this version of Open3D](https://github.com/tatarchm/Open3D.git) and compile it by running
 
 	$ cd Open3D
 	$ mkdir build
