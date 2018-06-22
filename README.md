@@ -12,14 +12,16 @@ Pre-prequisites
 	python == 3.6
 	tensorflow >= 1.3
 	
-Clone [this version of Open3D](https://github.com/tatarchm/Open3D.git) and compile it by running
+Clone [this version of Open3D](https://github.com/tatarchm/Open3D.git). Install dependencies and compile it by running
 
+	$ util/scripts/install-deps-ubuntu.sh
 	$ cd Open3D
 	$ mkdir build
 	$ cd build
 	$ cmake ../src
 	$ make
 
+Note that we only tested the system on Ubuntu Linux >= 16.04.
 Update the path to Open3D and the path to Tangent Convolutions in
 
 	tangent_convolutions/util/path_config.py
