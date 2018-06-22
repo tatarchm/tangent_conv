@@ -11,6 +11,7 @@ Pre-prequisites
 
 	python == 3.6
 	tensorflow >= 1.3
+	joblib
 	
 Clone [this version of Open3D](https://github.com/tatarchm/Open3D.git). Install dependencies and compile it by running
 
