@@ -14,9 +14,9 @@ Pre-prequisites
 	joblib
 	
 Clone [this version of Open3D](https://github.com/tatarchm/Open3D.git). Install dependencies and compile it by running
-
-	$ util/scripts/install-deps-ubuntu.sh
+	
 	$ cd Open3D
+	$ util/scripts/install-deps-ubuntu.sh
 	$ mkdir build
 	$ cd build
 	$ cmake ../src
