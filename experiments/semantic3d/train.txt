@@ -1,0 +1,12 @@
+domfountain_station1
+domfountain_station2
+domfountain_station3
+neugasse_station1
+sg27_station1
+sg27_station2
+sg27_station4
+sg27_station5
+sg27_station9
+sg28_station4
+untermaederbrunnen_station1
+untermaederbrunnen_station3
