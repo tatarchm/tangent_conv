@@ -100,6 +100,34 @@ To visualize predictions, run
 
 By default, downsampled scans are visualized. If you want to instead visualize the original scans, add the '--raw' flag.
 
+## Training on your data
+
+If you want to train the network on your own dataset, you need to prepare the data.
+
+Your data should be converted into the following structure:
+
+	<scan_name1>
+	...scan.pcd
+	...scan.labels
+	<scan_name2>
+	...scan.pcd
+	...scan.labels
+	...
+
+where scan.pcd contains 3D points with their attributes (colors, intensities etc.) and scan.labels is a text file with per-point semantic labels (0 corresponds to unlabeled data, 1-N to the actuall class labels).
+
+Then, you need to specify a configuration file for the experiment. See example in
+
+	tangent_conv/experiments/stanford/dhnrgb/config.json
+
+You also need to provide a train/test split for you data (.txt files containing the corresponding <scan_name> in each line).
+
+Finally, you need to add a new class with your dataset parameters into
+
+	tangent_conv/util/dataset_params.py
+
+From here on, you can follow the standard procedure for pre-computation and training/testing as described before.
+
 ## Citation
 
 If you use our code for research, please cite our paper:
