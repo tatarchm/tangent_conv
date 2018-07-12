@@ -45,6 +45,7 @@ def get_stanford():
 					continue
 				with open(os.path.join(scan_path, obj)) as f:
 					entries = f.readlines()
+					real_cnt = 0
 					for entry in entries:
 						if len(entry) < 2:
 							continue
@@ -57,9 +58,10 @@ def get_stanford():
 						res = [float(c) for c in spl]
 						points.append(np.asarray(res[0:3]))
 						colors.append(np.asarray(res[5:6] + res[4:5] + res[3:4]) / 255.0)
+						real_cnt += 1
 
 					class_name = obj.split("_")[0]
-					labels += [class_dict[class_name]] * len(entries)
+					labels += [class_dict[class_name]] * real_cnt
 
 			pcd = PointCloud()
 			pcd.points = Vector3dVector(points)
