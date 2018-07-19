@@ -25,7 +25,7 @@ Clone [this version of Open3D](https://github.com/tatarchm/Open3D.git). Install 
 Note that we only tested the system on Ubuntu Linux >= 16.04.
 Update the path to Open3D and the path to Tangent Convolutions in
 
-	tangent_convolutions/util/path_config.py
+	tangent_conv/util/path_config.py
 
 ## Experiments
 
