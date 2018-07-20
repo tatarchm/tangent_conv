@@ -25,7 +25,7 @@ Clone [this version of Open3D](https://github.com/tatarchm/Open3D.git). Install 
 Note that we only tested the system on Ubuntu Linux >= 16.04.
 Update the path to Open3D and the path to Tangent Convolutions in
 
-	tangent_convolutions/util/path_config.py
+	tangent_conv/util/path_config.py
 
 ## Experiments
 
@@ -130,9 +130,21 @@ From here on, you can follow the standard procedure for pre-computation and trai
 
 ## Citation
 
-If you use our code for research, please cite our paper:
-
-Maxim Tatarchenko*, Jaesik Park*, Vladlen Koltun and Qian-Yi Zhou. Tangent Convolutions for Dense Prediction in 3D. In CVPR 2018.
+If you use our code for research, please cite our papers:
+```
+@article{Zhou2018,
+	author    = {Maxim Tatarchenko* and Jaesik Park* and Vladlen Koltun and Qian-Yi Zhou.},
+	title     = {Tangent Convolutions for Dense Prediction in {3D}},
+	journal   = {CVPR},
+	year      = {2018},
+}
+@article{Zhou2018,
+	author    = {Qian-Yi Zhou and Jaesik Park and Vladlen Koltun},
+	title     = {{Open3D}: {A} Modern Library for {3D} Data Processing},
+	journal   = {arXiv:1801.09847},
+	year      = {2018},
+}
+```
 
 ## License
 
