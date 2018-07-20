@@ -138,7 +138,7 @@ If you use our code for research, please cite our papers:
 	journal   = {CVPR},
 	year      = {2018},
 }
-@article{Zhou2018,
+@article{Tat2018,
 	author    = {Qian-Yi Zhou and Jaesik Park and Vladlen Koltun},
 	title     = {{Open3D}: {A} Modern Library for {3D} Data Processing},
 	journal   = {arXiv:1801.09847},
