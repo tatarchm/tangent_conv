@@ -132,13 +132,13 @@ From here on, you can follow the standard procedure for pre-computation and trai
 
 If you use our code for research, please cite our papers:
 ```
-@article{Zhou2018,
+@article{Tat2018,
 	author    = {Maxim Tatarchenko* and Jaesik Park* and Vladlen Koltun and Qian-Yi Zhou.},
 	title     = {Tangent Convolutions for Dense Prediction in {3D}},
 	journal   = {CVPR},
 	year      = {2018},
 }
-@article{Tat2018,
+@article{Zhou2018,
 	author    = {Qian-Yi Zhou and Jaesik Park and Vladlen Koltun},
 	title     = {{Open3D}: {A} Modern Library for {3D} Data Processing},
 	journal   = {arXiv:1801.09847},
