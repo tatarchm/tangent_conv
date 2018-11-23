@@ -249,9 +249,6 @@ class model():
 		self.loss = tf.reduce_mean(tf.multiply(masked_weights,
 			tf.nn.sparse_softmax_cross_entropy_with_logits(labels=masked_label,
 														   logits=masked_output)))
-		global_step = tf.Variable(0, trainable=False)
-		learning_rate = tf.train.exponential_decay(0.001, global_step,
-                                            100000, 0.2, staircase=True)
 		self.train_step = tf.train.AdamOptimizer(0.0001).minimize(self.loss)
 
 		correct_prediction = tf.equal(tf.argmax(masked_output, axis=1, output_type=tf.int32), masked_label)
