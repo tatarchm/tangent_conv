@@ -197,10 +197,9 @@ def get_semantic3d():
 		colors = []
 		labels = []
 
-		with open(os.path.join(args.input_folder, key, "scan.txt")) as f:
+		with open(os.path.join(args.input_folder, key, "scan.txt"), "r") as f:
 			cnt = 0
-			entries = f.readlines()
-			for entry in entries:
+			for entry in f:
 				res = [float(c) for c in entry.split()]
 				points.append(np.asarray(res[0:3]))
 				colors.append(np.asarray(res[6:7] + res[5:6] + res[4:5]) / 255.0)
